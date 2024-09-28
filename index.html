@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wood Furniture</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </a>
+            
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section hero">
+        <div class="hero-text">
+            <h1>Handcrafted Wood Furniture</h1>
+            <p>Custom furniture tailored to your home and office.</p>
+            <a href="#portfolio" class="cta-button">Explore Our Work</a>
+        </div>
+
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <h2 style="margin: 60px;">Our Portfolio</h2>
+        <div class="carousel">
+            <button class="arrow left" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="carousel-images">
+                <img src="images/istockphoto-1293762741-612x612.jpg" alt="Modern Office Desk" class="active">
+                <img src="images/2.jpeg" alt="Rustic Dining Table">
+                <img src="images/3.jpg" alt="Rustic Dining Table">
+                <img src="images/sexy.avif" alt="Rustic Dining Table">
+                <img src="images/1.jpg" alt="Rustic Dining Table">
+
+
+                <!-- Add more images as needed -->
+
+            </div>
+            
+            
+            <button class="arrow right" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section" style="background-color: #3e2723;">
+        <h2 style="margin: 60px; color: white;">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Custom Furniture Design</h3>
+                <p>We design furniture tailored to your specific needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>Home & Office Furniture</h3>
+                <p>High-quality wood furniture for homes and offices.</p>
+            </div>
+            <div class="service-item">
+                <h3>Consultation & Measurements</h3>
+                <p>Personalized consultation and furniture measurements.</p>
+            </div>
+            <div class="service-item">
+                <h3>Delivery & Assembly</h3>
+                <p>We provide delivery and assembly services.</p>
+            </div>
+        </div>
+    </section>
+    <section id="packages" class="section">
+        <h2 style="margin: 60px;">Packages</h2>
+        <div class="packages-grid">
+            <!-- Package 1 -->
+            <div class="package-item">
+                <div class="package-carousel">
+                    <button class="carousel-btn left" onclick="changeImage(-1, 0)">&#10094;</button>
+                    <div class="package-images" id="carousel-0">
+                        <img src="images/bed1.jpg" alt="Bedroom Design 1" class="active">
+                        <img src="images/bed2.jfif" alt="Bedroom Design 2">
+                        <img src="images/bed3.jfif" alt="Bedroom Design 3">
+                    </div>
+                    <button class="carousel-btn right" onclick="changeImage(1, 0)">&#10095;</button>
+                </div>
+                <div class="package-info">
+                    <h3>Luxury Bedroom Set</h3>
+                    <p>Includes: King-sized bed, 2 nightstands, wardrobe, dresser</p>
+                    <p>Price: $1500</p>
+                </div>
+            </div>
+    
+            <!-- Package 2 -->
+            <div class="package-item">
+                <div class="package-carousel">
+                    <button class="carousel-btn left" onclick="changeImage(-1, 1)">&#10094;</button>
+                    <div class="package-images" id="carousel-1">
+                        <img src="images/liv1.jpg" alt="Salon Design 1" class="active">
+                        <img src="images/liv2.jfif" alt="Salon Design 2">
+                        <img src="images/liv3.jfif" alt="Salon Design 3">
+                    </div>
+                    <button class="carousel-btn right" onclick="changeImage(1, 1)">&#10095;</button>
+                </div>
+                <div class="package-info">
+                    <h3>Elegant Salon Set</h3>
+                    <p>Includes: 1 sofa, 2 armchairs, coffee table, side table</p>
+                    <p>Price: $1800</p>
+                </div>
+            </div>
+    
+            <!-- Add more packages with carousels as needed -->
+        </div>
+    </section>
+    
+  <!-- Contact Section -->
+<section id="contact" class="section"style="background-color:black;">
+    <h2 style="margin: 60px;">Get in Touch</h2>
+    <div class="contact-icons">
+        <a href="https://wa.me/yourwhatsappnumber" target="_blank">
+            <div class="icon-wrapper">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            WhatsApp
+        </a>
+        <a href="tel:+201111305610">
+            <div class="icon-wrapper">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            +20 1111305610
+        </a>
+        <a href="mailto:your-email@example.com">
+            <div class="icon-wrapper">
+                <i class="fas fa-envelope"></i>
+            </div>
+            hamzamahmoud4902@gmail.com
+        </a>
+    </div>
+</section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
